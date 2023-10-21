@@ -39,7 +39,9 @@ for phy_name in phys_data:
     phy_data = phys_data[phy_name]
 
     # Get network interfaces
-    phy_data['net_ifs'] = os.listdir(path=phy_data['device_dir'] + 'net/')
+    net_dir = phy_data['device_dir'] + 'net/'
+    if os.path.exists(net_dir):
+        phy_data['net_ifs'] = os.listdir(path=net_dir)
     
     # Get PCI bus
     driver_files = os.listdir(path=phy_data['device_dir'] + 'driver/')
