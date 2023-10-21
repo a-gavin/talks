@@ -308,6 +308,8 @@ Open Wireshark with admin permissions (e.g. `sudo wireshark`) and select the cre
 
 For on-the-fly analysis, editing a live or recently-stopped capture in Wireshark is sufficient. However, for longer running packet captures (or if you really don't wanna redo your capture), save the capture before analyzing or use a non-GUI CLI tool like `tshark` (generally a separate package to install) instead.
 
+For more a quick-reference WiFi (802.11) Wireshark filter cheatsheet, see [this PDF](./assets/80211_wireshark_cheatsheet.pdf).
+
 ![Selecting wireless interface to perform packet capture on](./assets/wireshark_selecting_interface.png)
 
 ![Packet capture in progress using interface 'moni0'](./assets/wireshark_pcap_in_progress.png)
